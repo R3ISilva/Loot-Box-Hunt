@@ -44,3 +44,9 @@ TagManager:
   - name: Player
     uniqueID: 474146801
     locked: 0
+  - name: Treasure
+    uniqueID: 561412447
+    locked: 0
+  - name: Compass
+    uniqueID: 1828309363
+    locked: 0
