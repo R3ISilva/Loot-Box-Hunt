@@ -44,7 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c998bfcf42107147b433c5ce9a2e93e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultTile: {fileID: 6198536351308594812, guid: 38d5674648d918b48a576c4c9bcfa76a, type: 3}
+  defaultTile: {fileID: 4259840532481260787, guid: 38d5674648d918b48a576c4c9bcfa76a, type: 3}
   waterTile: {fileID: 7204326414314750984, guid: 125b860d6fcd0b44c9f00b77ee0d9ba0, type: 3}
   sandTile: {fileID: 6566443484897037823, guid: 916afb81901756147b7cda25fe2f6abc, type: 3}
   gridSize: 5
+  probabilityWaterSpawn: 0.1
+  probabilityTreasureSpawn: 0.05
+  treasurePrefab: {fileID: 4782375183964687779, guid: a90f160c17e8343bb82bcb7cbf07f381, type: 3}

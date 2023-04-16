@@ -10,7 +10,7 @@ public class CompassNeedleLogic : MonoBehaviour
 
     private void Start()
     {
-        characterObject = GameObject.Find("CharacterPreFab");
+        characterObject = GameObject.Find("Player");
         treasureObject = GameObject.Find("TreasurePreFab");
 
     }

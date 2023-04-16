@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class CompassLogic : MonoBehaviour
 {
-    GameObject characterObject;
+    [SerializeField] GameObject characterObject;
 
     // Start is called before the first frame update
     void Start()
     {
-       characterObject = GameObject.Find("CharacterPreFab");
+       //characterObject = GameObject.Find("Player");
     }
 
     // Update is called once per frame
