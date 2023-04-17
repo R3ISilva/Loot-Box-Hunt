@@ -5,16 +5,8 @@ using static UnityEngine.GraphicsBuffer;
 
 public class CompassNeedleLogic : MonoBehaviour
 {
-    GameObject characterObject;
-    GameObject treasureObject;
-
-    private void Start()
-    {
-        characterObject = GameObject.Find("Player");
-        treasureObject = GameObject.Find("TreasurePreFab");
-
-    }
-
+    [SerializeField] Player characterObject;
+    [SerializeField] TreasureHunt treasureObject;
     void Update()
     {
         if (characterObject != null)
@@ -28,8 +20,14 @@ public class CompassNeedleLogic : MonoBehaviour
             // Calculate the angle between the two vectors
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg + 90f;
 
-            // Set the rotation of the needle
-            transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+            Quaternion rotation;
+            if (treasurePosition == characterPosition) {
+                rotation = Quaternion.AngleAxis(UnityEngine.Random.Range(0f, 360f), Vector3.forward);
+            } else {
+                // Set the rotation of the needle
+                rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+            }
+            transform.rotation = rotation;
         }
 
         

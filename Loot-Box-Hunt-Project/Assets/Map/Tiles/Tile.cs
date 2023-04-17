@@ -9,6 +9,8 @@ public class Tile : MonoBehaviour
         Water,
     }
 
+    public Tile.Type tileType;
+
     private bool hasTreasure;
 
     public Tile() {
@@ -22,4 +24,5 @@ public class Tile : MonoBehaviour
     public void SetHasTreasure(bool hasTreasure) {
         this.hasTreasure = hasTreasure;
     }
+    
 }
